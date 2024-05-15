@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import "@/app/components/ui/globals.css";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"] });
+const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] });
 
 export const metadata: Metadata = {
   title: "AGROBIOTEK INGENIERIE",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${poppins.className}, bg-black`}>{children}</body>
+      <body className={`${inter.className}, bg-black`}>{children}</body>
     </html>
   );
 }
